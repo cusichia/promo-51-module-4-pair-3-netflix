@@ -7,8 +7,9 @@ const MoviesList = ({ movies }) => {
 
   const renderMovies = () => {
     return movies.map((movie) => {
+      console.log(movie);
       return (
-        <li key={movie.id} className="card">
+        <li key={movie.idMovie} className="card">
           <img
             className="card__img"
             src={movie.image}
